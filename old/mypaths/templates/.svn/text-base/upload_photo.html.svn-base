@@ -1,0 +1,17 @@
+<html>
+<head>
+</head>
+<body>
+<!-- Upload form. Note enctype attribute! -->
+<form action="/upload-photo/1/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+    {{ form.docfile.help_text }}
+    {{ form.docfile.label_tag }}
+    {{ form.docfile.errors }}
+    {{ form.docfile }}
+    <input type="submit" value="Upload" />
+    <input type="file" name="docfile" size="40">
+</form>
+</body>
+</html>

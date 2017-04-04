@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/my-paths/code/!svn/ver/13/trunk/web/django/mypaths/mypathsapp/management/commands
+END
+_priavte.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/my-paths/code/!svn/ver/13/trunk/web/django/mypaths/mypathsapp/management/commands/_priavte.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/my-paths/code/!svn/ver/13/trunk/web/django/mypaths/mypathsapp/management/commands/__init__.py
+END
+addpath.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/my-paths/code/!svn/ver/21/trunk/web/django/mypaths/mypathsapp/management/commands/addpath.py
+END

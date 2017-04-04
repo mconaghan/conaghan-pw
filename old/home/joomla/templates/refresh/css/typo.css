@@ -1,0 +1,32 @@
+/*Icons */
+.ppicon_advanced {background: url(../images/typo/advanced.png) no-repeat left center;padding: 20px 20px 20px 50px;display: block;}
+.ppicon_alert {background: url(../images/typo/alert.png) no-repeat left center;padding: 20px 20px 20px 50px;display: block;}
+.ppicon_archive {background: url(../images/typo/archive.png) no-repeat left center;padding: 20px 20px 20px 50px;display: block;}
+.ppicon_cancel {background: url(../images/typo/cancel.png) no-repeat left center;padding: 20px 20px 20px 50px;display: block;}
+.ppicon_chat {background: url(../images/typo/chat.png) no-repeat left center;padding: 20px 20px 20px 50px;display: block;}
+.ppicon_check {background: url(../images/typo/check.png) no-repeat left center;padding: 20px 20px 20px 50px;display: block;}
+.ppicon_computer {background: url(../images/typo/computer.png) no-repeat left center;padding: 20px 20px 20px 50px;display: block;}
+.ppicon_help {background: url(../images/typo/help.png) no-repeat left center;padding: 20px 20px 20px 50px;display: block;}
+.ppicon_hot {background: url(../images/typo/hot.png) no-repeat left center;padding: 20px 20px 20px 50px;display: block;}
+.ppicon_info {background: url(../images/typo/info.png) no-repeat left center;padding: 20px 20px 20px 50px;display: block;}
+.ppicon_padlock {background: url(../images/typo/padlock.png) no-repeat left center;padding: 20px 20px 20px 50px;display: block;}
+.ppicon_question {background: url(../images/typo/question.png) no-repeat left center;padding: 20px 20px 20px 50px;display: block;}
+.ppicon_send {background: url(../images/typo/send.png) no-repeat left center;padding: 20px 20px 20px 50px;display: block;}
+.ppicon_smiley {background: url(../images/typo/smiley.png) no-repeat left center;padding: 20px 20px 20px 50px;display: block;}
+.ppicon_star {background: url(../images/typo/star.png) no-repeat left center;padding: 20px 20px 20px 50px;display: block;}
+
+/*Boxes*/
+.ppbox_style1 {border: 2px solid #999;border-left: 7px solid #7b8a74;padding: 10px;margin: 10px 0 20px}
+.ppbox_style2 {border: 2px solid #999;border-left: 7px solid #8b0000;padding: 10px;margin: 10px 0 20px}
+.ppbox_style3 {border: 2px solid #999;border-left: 7px solid #4a4933;padding: 10px;margin: 10px 0 20px}
+.ppbox_style4 {border: 2px solid #999;border-left: 7px solid #8e9468;padding: 10px;margin: 10px 0 20px}
+.ppbox_style5 {border: 2px solid #999;border-left: 7px solid #383a47;padding: 10px;margin: 10px 0 20px}
+.ppbox_style6 {border: 2px solid #999;border-left: 7px solid #b06039;padding: 10px;margin: 10px 0 20px}
+.ppbox_style7 {border: 2px solid #999;border-left: 7px solid #cd6600;padding: 10px;margin: 10px 0 20px}
+
+
+/*Lists */
+ul.pp_black li{list-style-type:none;padding-left:23px;background:url(../images/typo/black.png) no-repeat scroll 4px 7px transparent;}
+ul.pp_arrow li{list-style-type:none;padding-left:23px;background:url(../images/typo/arrowbullet.png) no-repeat scroll 1px 2px transparent;}
+ul.pp_star li{list-style-type:none;padding-left:23px;background:url(../images/typo/starbullet.png) no-repeat scroll 1px 2px transparent;}
+

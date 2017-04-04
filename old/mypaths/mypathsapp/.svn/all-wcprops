@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/p/my-paths/code/!svn/ver/6/trunk/web/django/mypaths/mypathsapp
+END
+admin.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/my-paths/code/!svn/ver/13/trunk/web/django/mypaths/mypathsapp/admin.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/my-paths/code/!svn/ver/22/trunk/web/django/mypaths/mypathsapp/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/my-paths/code/!svn/ver/6/trunk/web/django/mypaths/mypathsapp/__init__.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/p/my-paths/code/!svn/ver/6/trunk/web/django/mypaths/mypathsapp/tests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/my-paths/code/!svn/ver/22/trunk/web/django/mypaths/mypathsapp/models.py
+END
+forms.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/my-paths/code/!svn/ver/21/trunk/web/django/mypaths/mypathsapp/forms.py
+END

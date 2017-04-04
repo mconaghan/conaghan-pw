@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+/* Copyright 2010 Pixel Point Creative ~ www.pixelpointcreative.com */
+
+#content50{padding-right:4px; width:386px}
+#content75{padding-right:8px;}
+div.catItemHeader span.catItemDateCreated, div.itemHeader span.itemDateCreated, div.genericItemHeader span.genericItemDateCreated 
+{position:relative;margin-left:0px;margin-top:25px;padding:7px 100px 16px 40px;width:224px;}
+.catItemHeader, .itemHeader{margin-left:-38px;}
+div.catItemHeader h3.catItemTitle,.itemHeader h2, div.itemHeader h2.itemTitle {margin-left:40px;}
+div.rightcontain {width:241px;}
+div.right h3 {width:258px;}
+#pathway{width:916px;}

@@ -1,0 +1,35 @@
+se.html" %}
+
+{% block bodytag %}
+<body>
+{% endblock %}
+
+{% block content %}
+     <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>Welcome to My Paths!</h1>
+        <p>My Paths allows you to record your paths.  Whether it's a walk, run, ski or cycle the MyPaths Android app will record where you go and let you take photos, videos and record annotations.  You can then view (and share if you want) your paths online.</p>
+        <p><a class="btn btn-primary btn-large">Register »</a></p>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span4">
+          <h2>Example Walk 1</h2>
+           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/hero.html#">View details »</a></p>
+        </div>
+        <div class="span4">
+          <h2>Example Walk 2</h2>
+           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/hero.html#">View details »</a></p>
+       </div>
+        <div class="span4">
+          <h2>Example Walk 3</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+ class="btn" href="http://twitter.github.com/bootstrap/examples/hero.html#">View details »</a></p>
+        </div>
+      </div>
+
+      <hr>
+{% endblock %}

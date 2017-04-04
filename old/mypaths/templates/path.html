@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block extrascript %}
+<script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCaY920Tve8X_bn9eklYx0orsnENcxgwiY&sensor=false">
+    </script>
+    <script type="text/javascript">
+  function initialize() {
+
+    // Create the map 
+    // No need to specify zoom and center as we fit the map further down.
+    var map = new google.maps.Map(document.getElementById("map_canvas"), {
+      mapTypeId: google.maps.MapTypeId.TERRAIN,
+      streetViewControl: false
+    });
+ 
+    // Create the shared infowindow with two DIV placeholders
+    // One for a text string, the other for the StreetView panorama.
+    var content = document.createElement("DIV");
+    var title = document.createElement("DIV");
+    content.appendChild(title);
+    var streetview = document.createElement("DIV");
+    streetview.style.width = "200px";
+    streetview.style.height = "200px";
+    content.appendChild(streetview);
+    var infowindow = new google.maps.InfoWindow({
+   content: content
+    });
+
+    // Define the list of markers.
+    // This could be generated server-side with a script creating the array.
+    var markers = [
+{% for point in point_list %}
+      { lat: {{point.lat}}, lng: {{point.lon}}, name: "{{point.title}}", detail : "{{point.annotation}}", battery: "{{point.battery}}", reception : "{{point.reception}}", altitude: "{{point.altitude}}", distance: "{{point.dist_from_last}}", time: "{{point.time}}", photo: "{{point.photo_url}}"},
+{% endfor %}
+    ];
+
+    // Create the markers
+    for (index in markers) addMarker(markers[index]);
+
+    function addMarker(data) {
+     var comment_icon = new google.maps.MarkerImage("http://martinconaghan.dyndns.org/media/comment.png");
+     var footprint_icon = new google.maps.MarkerImage("http://martinconaghan.dyndns.org/media/footprint.png");
+     var camera_icon = new google.maps.MarkerImage("http://martinconaghan.dyndns.org/media/camera.png");
+
+     if (data.detail.length > 3)
+     {
+       var icon = comment_icon;
+     }
+     else if (data.photo.length > 1)
+     {
+       var icon = camera_icon;
+     }
+     else
+     {
+       var icon = footprint_icon;
+     }
+     var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(data.lat, data.lng),
+      map: map,
+      icon: icon,
+      title: data.name
+   });
+   google.maps.event.addListener(marker, "click", function() {
+  openInfoWindow(marker, data);
+   });
+    }
+
+    // Zoom and center the map to fit the markers
+    // This logic could be conbined with the marker creation.
+    // Just keeping it separate for code clarity.
+    var bounds = new google.maps.LatLngBounds();
+    for (index in markers) {
+   var data = markers[index];
+   bounds.extend(new google.maps.LatLng(data.lat, data.lng));
+ }
+ map.fitBounds(bounds);
+
+    // Handle the DOM ready event to create the StreetView panorama
+    // as it can only be created once the DIV inside the infowindow is loaded in the DOM.
+    var panorama = null;
+    var pin = new google.maps.MVCObject();
+    
+    // Set the infowindow content and display it on marker click.
+    // Use a 'pin' MVCObject as the order of the domready and marker click events is not garanteed.
+    function openInfoWindow(marker, data) {
+   title.innerHTML = data.name;
+ //  streetview.innerHTML = "test";
+   streetview.innerHTML = '<p>' + data.detail + '</p><p>Distance from last:' + data.distance + '</p><p>Altitude: ' + data.altitude + '</p><p>Battery:' + data.battery + '</p><p>Reception: ' + data.reception + '</p><p>Time: ' + data.time + '</p><p><img src=' + data.photo + ' alt="Photo" /></p>';
+   pin.set("position", marker.getPosition());
+   infowindow.open(map, marker);
+    }
+  }
+    </script>
+{% endblock %}
+
+{% block bodystart %}
+<body onload="initialize()">
+{% endblock %}
+{% block bodyend %}
+    <div id="map_canvas" style="width:100%; height:100%"></div>
+  </body>
+{% endblock %}

@@ -1,0 +1,15 @@
+div.qaccordion .acc-header-active{
+  cursor: pointer;
+  margin: 15px 0 7px 0;
+  padding: 0;
+  border-bottom: 1px solid #ddd;
+  background: url(../images/arrow2.png) no-repeat scroll right center;
+}
+
+div.qaccordion .acc-header {
+  cursor: pointer;
+  margin: 15px 0 7px 0;
+  padding: 0;
+  border-bottom: 1px solid #ddd;
+  background: url(../images/arrow1.png) no-repeat scroll right center;
+}

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/p/my-paths/code/!svn/ver/6/trunk/web/django/mypaths/templates
+END
+path.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/my-paths/code/!svn/ver/22/trunk/web/django/mypaths/templates/path.html
+END
+upload_photo.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/my-paths/code/!svn/ver/21/trunk/web/django/mypaths/templates/upload_photo.html
+END
+base-nonmap.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/my-paths/code/!svn/ver/13/trunk/web/django/mypaths/templates/base-nonmap.html
+END
+base.html.copy
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/my-paths/code/!svn/ver/13/trunk/web/django/mypaths/templates/base.html.copy
+END
+google045ba76b5db80a09.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/my-paths/code/!svn/ver/21/trunk/web/django/mypaths/templates/google045ba76b5db80a09.html
+END
+base.html.map
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/my-paths/code/!svn/ver/13/trunk/web/django/mypaths/templates/base.html.map
+END
+home.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/my-paths/code/!svn/ver/21/trunk/web/django/mypaths/templates/home.html
+END
+path.html.old
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/my-paths/code/!svn/ver/13/trunk/web/django/mypaths/templates/path.html.old
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/my-paths/code/!svn/ver/21/trunk/web/django/mypaths/templates/base.html
+END
